@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Quel est jour de la semaine?</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+<script th:src="@{/js/script.js}"></script>
+</head>
+<body>
+	<h1>
+		Le jour de la semaine pour <span th:utext="${date}">..!..</span> :
+	</h1>
+	<h2 th:utext="${dayOfWeek}">..!..</h2>
+	<a th:href="@{/}">Retour</a>
+</body>
+
+</html>
